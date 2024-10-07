@@ -27,6 +27,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      ACTIONS_STEP_DEBUG: true
+
     steps:
       - uses: actions/checkout@v4
       - name: Setup Go
